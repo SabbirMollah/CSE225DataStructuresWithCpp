@@ -30,7 +30,7 @@ int StackList::pop() {
 		top = top->next;
 		delete temp;
 		return x;
-	} 
+	}
 	else {
 		throw StackEmpty();
 	}
@@ -50,7 +50,10 @@ void StackList::deleteAll() {
 	ListNode* prevNode;
 	node = top;
 
-	if (top->next == NULL) {
+    if(top==NULL){
+        return;
+    }
+	else if (top->next == NULL) {
 		delete top;
 	}
 	else {

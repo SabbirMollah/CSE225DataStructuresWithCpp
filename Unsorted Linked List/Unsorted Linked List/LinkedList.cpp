@@ -126,11 +126,24 @@ void LinkedList::deletetNodeAtMiddle(int value) {
 }
 
 void LinkedList::deleteAll() {
-	ListNode* temp;
-	while (head != NULL) {
-		temp = head;
-		head = head->next;
-		delete temp;
+	ListNode* node;
+	ListNode* prevNode;
+	node = head;
+
+	if (head == NULL) {
+		return;
+	}
+	else if (head->next == NULL) {
+		delete head;
+
+	}
+	else {
+		while (node->next != NULL) {
+			prevNode = node;
+			node = node->next;
+			delete prevNode;
+		}
+		delete node;
 	}
 }
 
