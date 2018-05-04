@@ -1,5 +1,5 @@
-#ifndef DYNAMICARRAY_H_INCLUDED
-#define DYNAMICARRAY_H_INCLUDED
+#ifndef SORTEDLIST_H_INCLUDED
+#define SORTEDLIST_H_INCLUDED
 
 //T is the ItemType
 template <class T>
@@ -18,4 +18,4 @@ public:
 	void ResetList();
 };
 
-#endif // DYNAMICARRAY_H_INCLUDED
+#endif // SORTEDLIST_H_INCLUDED
