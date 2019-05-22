@@ -5,7 +5,7 @@ StackList::StackList() {
 }
 
 bool StackList::isFull() {
-	return (top = MAX_ITEMS - 1);
+	return (top == MAX_ITEMS - 1);
 }
 
 bool StackList::isEmpty() {
